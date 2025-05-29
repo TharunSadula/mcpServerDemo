@@ -24,11 +24,24 @@ public class McpService {
 
     @Tool(
         name = "analysisTests",
-        description = "use this tool if the processMcpRequest has data returned with error further analysis needed and further analysis pass request , description from previous request"
+        description = "use this tool if the processMcpRequest has data returned with error further analysis needed "
     )
-    public String analysisTests(@ToolParam(description="request") String request,String description,String analysis) {
+    public String analysisTests(@ToolParam(description="request from processMcpRequest") String  request1
+    ,@ToolParam(description = "description from processMcpRequest")String description1,
+     @ToolParam(description = "get input from user")String analysis) {
         // Placeholder for processing logic
-        return "analysis started MCP request: " + request + " with description: " + description + " and analysis: " + analysis;
+        return "analysis started MCP request: " + request1 + " with description: " + description1 + " and analysis: " + analysis;
+    }
+
+
+     @Tool(
+        name = "getLocation",
+        description = "prints the latitude and longitude of the location"
+    )
+    public String getLocation(@ToolParam(description="latitude") String latitude,
+                              @ToolParam(description="longitude") String longitude) {
+        // Placeholder for processing logic
+        return "Location: Latitude = " + latitude + ", Longitude = " + longitude;
     }
     
 

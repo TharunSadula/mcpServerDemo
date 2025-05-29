@@ -20,18 +20,27 @@ mcpService.processMcpRequest("exampleRequest", "This is a description of the req
 1. `processMcpRequest`
    - Description: Process MCP requests with a name and description
    - Parameters:
-     - request (String): The request content
-     - description (String): Description of the request
+     - request (String): input from user
+     - description (String): input from user
    - Returns: A processed response string
 
 
 1. `analysisTests`
    - Description: use this tool if the processMcpRequest has data returned with error and further analysis
    - Parameters:
-     - request (String): The request content
-     - description (String): Description of the request
-     - analysis needed tested
-   - Returns: A processed response string
+     - request1 (String): The request content
+     - description1 (String): Description of the request
+     - analysis(String): request it from user
+   - Returns: return string
+
+## getLocation
+
+The `getLocation` functionality retrieves the latitude and longitude for a specified place. For example, requesting the location for "Bentonville, Arkansas" returns:
+
+- Latitude: 36.3729
+- Longitude: -94.2088
+
+This can be used to obtain geographic coordinates for cities or locations as needed in the application.
 
 ## Best Practices
 1. Always provide clear descriptions for requests
