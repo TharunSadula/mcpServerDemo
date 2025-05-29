@@ -40,6 +40,14 @@ The `getLocation` functionality retrieves the latitude and longitude for a speci
 - Latitude: 36.3729
 - Longitude: -94.2088
 
+## processTask
+The 'processTask' functionality retrives the action for given task, suggest user if he want to move to processAction
+if no action is returned then ask the user to provide input for processTask 
+
+## processAction
+The 'processAction' functionality takes action and level 
+
+
 This can be used to obtain geographic coordinates for cities or locations as needed in the application.
 
 ## Best Practices
