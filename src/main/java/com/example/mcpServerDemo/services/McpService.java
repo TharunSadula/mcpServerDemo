@@ -43,6 +43,15 @@ public class McpService {
         // Placeholder for processing logic
         return "Location: Latitude = " + latitude + ", Longitude = " + longitude;
     }
+
+    @Tool(
+        name = "getFamousplaces",
+        description = "get famous places based on latitude and longitude from getLocation"
+    )
+    public String getFamousplaces(@ToolParam(description = "famous places") String famousPlaces) {
+        // Placeholder for processing logic
+        return "Famous places: " + famousPlaces;
+    }
     
 
     // Additional methods can be added as needed
